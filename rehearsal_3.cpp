@@ -1,7 +1,19 @@
 #include <iostream>
+#include <cmath>
+using namespace std;
 
-//Write sumSqrt() here.
-
+double sumSqrt(int N){
+    double x=0;
+  if(N<=0){
+      return 0;
+  }  
+  int i=1;
+  while(i <= N){
+      x +=pow(pow(i,0.5),-1);
+      i++;
+  }
+  return x;
+}
 
 int main()
 {
